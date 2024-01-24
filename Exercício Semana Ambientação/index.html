@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotógrafa Amadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@300&family=Nunito:wght@200;300;400&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="home">
+        <nav id="menuPrincipal">
+            <h1 class="logo">Fotógrafa <span>Amadora</span></h1>
+            <ul>
+                <li><a href="#"></a>Meus cliques
+                    <ul class="dropdown">
+                        <div id="itens-meus-cliques">
+                        <li id="menuLugares"><a href="#lugares">Lugares</a></li>
+                        <li id="menuAnimais"><a href="#animais">Animais</a></li>
+                        <li id="menuPraias"><a href="#praias">Praias</a></li>
+                        </div>
+                    </ul>
+                </li>    
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>  
+</header>
+
+<script>
+
+    //início dos eventos de click, conforme Ex4 da lista de exercícios
+    let menuLugares = document.getElementById("menuLugares");
+
+    menuLugares.addEventListener("click", exibirAlertaLugares);
+
+    function exibirAlertaLugares() {
+        alert("Minhas fotos de lugares aleatórios")
+    }
+
+
+    let menuAnimais = document.getElementById("menuAnimais");
+
+    menuAnimais.addEventListener("click", exibirAlertaAnimais);
+
+    function exibirAlertaAnimais() {
+        alert("Minhas fotos de animais")
+    }
+
+
+    let menuPraias = document.getElementById("menuPraias");
+
+    menuPraias.addEventListener("click", exibirAlertaPraias);
+
+    function exibirAlertaPraias() {
+        alert("Minhas fotos de praias")
+    }
+    //fim dos eventos de click
+    
+    //início eventos de mouse, conforme Ex4 da lista de exercícios
+    //aqui, como eu não usei cor de fundo para o background do header, mas sim uma imagem
+    //e eu não queria que a imagem do header mudasse, coloquei o evento somente na área
+    //de navegação, adicionando um sombreado na área ao entrar com o mouse
+    //e retirando o sombreado ao sair
+    let menuPrincipal = document.getElementById("menuPrincipal");
+    menuPrincipal.addEventListener("mouseenter", mudarCordoMenu);
+
+    function mudarCordoMenu() {
+        menuPrincipal.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.9),rgba(62, 87, 158, 0.5))";
+    }
+
+    menuPrincipal.addEventListener("mouseout", tirarCordoMenu);
+
+    function tirarCordoMenu() {
+        menuPrincipal.style.backgroundImage = "";
+    }
+    //fim dos eventos de mouse
+</script>
+
+<article>
+    <section>
+        <div id="lugares">
+        <h2>Nenhum compromisso e um celular na mão</h2>
+        <p>Todo mundo é um pouco fotógrafo desde que as câmeras de alta resolução se tornaram item básico do celular. Não costumo compartilhar meu dia a dia nas redes, nem tirar fotos com frequência, gosto de dizer que sou a "fotógrafa ocasional" (além de amadora): aquela que para e tira umas fotos quando não está na correria do trabalho e dos afazeres diários. Então, é quando estou viajando de férias ou em um canto diferente no fim de semana, que gosto de procurar bons ângulos pra fazer umas fotos legais.</p>
+        </div>
+        <div id="grid-lugares">
+            <img src="../fotos/section1/buzios.jpg">
+            <img src="../fotos/section1/buzios-placas.jpg">
+            <img src="../fotos/section1/cabo-frio.jpg">
+            <img src="../fotos/section1/cabo-frio-passagem.jpg">
+            <img src="../fotos/section1/cabo-frio-passagem-02.jpg">
+            <img src="../fotos/section1/cabo-frio-restaurante.jpg">
+            <img src="../fotos/section1/cafe-da-tarde-gramado.jpg">
+            <img src="../fotos/section1/entrada-templo-budista.jpg">
+            <img src="../fotos/section1/mesquita.jpg">
+            <img src="../fotos/section1/igreja-sao-pedro.jpg">
+            <img src="../fotos/section1/gramado.jpg">
+            <img src="../fotos/section1/gramado-2.jpg">
+            <img src="../fotos/section1/gramado-3.jpg">
+            <img src="../fotos/section1/hotel-gramado.jpg">
+            <img src="../fotos/section1/passeio-hotel-gramado.jpg">
+            <img src="../fotos/section1/rua-das-pedras-buzios.jpg">
+            <img src="../fotos/section1/templo-budista-foz.jpg">
+            <img src="../fotos/section1/petit-gateou.jpg">
+            <img src="../fotos/section1/ponte-da-amizade.jpg">
+        </div>
+    </section>
+    <section>
+        <div id="animais">
+        <h2>Um gato, um cachorro ou qualquer animal dando bobeira por aí</h2>
+        <p>Quem não gosta de um animal fofinho, heim? Principalmente gatos (tenho dois, por sinal). Só preciso de um pouquinho de paciência pra pegar eles paradinhos e "click"!</p>
+        </div>
+        <div id="grid-animais">
+            <img src="../fotos/section2/gato-hotel-gramado-compressed.jpg">
+            <img src="../fotos/section2/parque-maringa-compressed.jpg">
+            <img src="../fotos/section2/cachorro-olinda-compressed.jpg">
+            <img src="../fotos/section2/gato-olinda-compressed.jpg">
+            <img src="../fotos/section2/mio-compressed.jpg">
+            <img src="../fotos/section2/galo-olinda-compressed.jpg">
+            <img src="../fotos/section2/borboletas-reserva-cataratas-foz-compressed.jpg">
+            <img src="../fotos/section2/gato-maragogi-compressed.jpg">
+            <img src="../fotos/section2/mayu-lago-pedra-branca-compressed.jpg">
+            <img src="../fotos/section2/parque-das-aves-compressed.jpg">
+            <img src="../fotos/section2/patos-compressed.jpg">
+        </div>
+    </section>
+    <section>
+        <div id="praias">
+        <h2>Mar é sinônimo de paz</h2>
+        <p>Nada melhor que a brisa do mar e a claridade de um dia ensolarado para enquadrar uma boa foto.</p>
+        </div>
+        <div id="grid-praias">           
+            <img src="../fotos/section3/arraial-do-cabo-praia-2-compressed.jpg">
+            <img src="../fotos/section3/falesias-praia-do-gunga-compressed.jpg">
+            <img src="../fotos/section3/praia-campeche-compressed.jpg">
+            <img src="../fotos/section3/praia-da-azedinha-buzios-compressed.jpg">
+            <img src="../fotos/section3/praia-florianopolis-compressed.jpg">
+            <img src="../fotos/section3/ribeirao-da-ilha-1-compressed.jpg">
+            <img src="../fotos/section3/arraial-do-cabo-praia-compressed.jpg">
+            <img src="../fotos/section3/ribeirao-da-ilha-2-compressed.jpg">
+            <img src="../fotos/section3/arraial-do-cabo-compressed.jpg">
+            <img src="../fotos/section3/mirante-cabo-frio-compressed.jpeg">
+            <img src="../fotos/section3/praia-das-conchas-compressed.jpg">       
+        </div>
+    </section>
+</article> 
+<footer>
+    <h3 id="contato">Mari Martins</h3>
+    <p>contato:</p>
+    <div class="social-icons">
+    <a href="https://github.com/mari-martins-souza" target="_blank"><img src="../imagens/github.png"></a>
+    <a href="https://www.linkedin.com/in/mariana-martins-de-souza/" target="_blank"><img src="../imagens/linkedin.png"></a>
+    <a href="https://wa.me/48991120595" target="_blank"><img src="../imagens/whatsapp.png"></a>
+    <a href="https://www.instagram.com/marih_ms/" target="_blank"><img src="../imagens/instagram.png"></a>
+</footer>
+</body>
+</html>
+
+
